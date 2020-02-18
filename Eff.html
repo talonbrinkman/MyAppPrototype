@@ -1,0 +1,93 @@
+<html>
+  <head>
+        <link rel="icon" href="fvcon.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="Eff.css" rel="stylesheet" type="text/css">
+
+    <title>Small Pro</title>
+
+    <script>
+          $(document).ready(function(){
+          $("#oft").fadeOut(0);
+          $("#pic1").fadeOut(0);
+          $("#pic2").fadeOut(0);
+          $("button").click(function(){
+          $("#AS").fadeOut(1000);
+          $("#pic1").fadeIn(3000);
+          $("#pic1").fadeOut(1000);
+          $("#pic2").fadeIn(1000);
+          $("#so").fadeOut(0);
+          $("#oft").fadeIn(5000);
+        });
+      });
+
+      $(document).ready(function(){
+      $("button").click(function(){
+        setTimeout(function(){}, 3000);
+            $("#pic2").fadeIn(1000);
+              });
+          });
+     var x = true;
+    function hideStuff()
+    {
+           document.getElementById("pic1").hidden = x;
+    }
+    function revStuff()
+    {
+        if(x == true)
+        {
+          x = false;
+        }
+        else {
+          x = true;
+        }
+           document.getElementById("pic1").hidden = x;
+    }
+
+   </script>
+  </head>
+  <!--Apply Below      onload = "hideStuff()"-->
+  <body>
+    <div class="banner">
+      <div id="cart">
+      <img src="Cart.png" height="45px" onclick="window.location.href = 'Cart.html'">
+    </div>
+      Small Pro
+      <div id="user">
+      <img src="User.png" height="50px" onclick="window.location.href = 'UserLogin.html'">
+    </div>
+    </div>
+    <div class="banner2">
+      Maximizing Your Space By The GIGABYTE
+    </div>
+    <center>
+      <div id="AS">
+      <br>
+      We use a Patented Algorithm
+      <br>
+      To access a persons
+      <br>
+      Files and organize them and compressing
+      <br>
+      them maximizing their space
+      <br>
+    </div>
+
+    <div id="oft">
+    <br>
+    Process Complete
+    <br>
+    You saved 16.43 GB
+  </div>
+
+        <button type="button" name= "button" id = "so" onclick = "revStuff()">Start Process</button>
+        <br>
+        <img id = "pic1" src="fe1.png">
+        <br>
+        <img id = "pic2" src="fstrg.png">
+  </center>
+
+  </body>
+</html>

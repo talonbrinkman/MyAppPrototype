@@ -1,0 +1,65 @@
+<html>
+      <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="Eff.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="Eff.css" rel="stylesheet" type="text/css">
+
+    <title>Effiency Pro</title>
+    <script>
+          $(document).ready(function(){
+          $("#welcome").fadeOut(0);
+          $("#hmbtn").fadeOut(0);
+          $("button").click(function(){
+          $("#sb").fadeOut(0);
+          $("#up").fadeOut(0);
+          $("#welcome").fadeIn(2000);
+          $("#hmbtn").fadeIn(2000);
+
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="banner">
+      <div id="cart">
+      <img src="Cart.png" height="45px" onclick="window.location.href = 'Cart.html'">
+    </div>
+      User Login
+      <div id="user">
+      <img src="Home.png" height="40px" onclick="window.location.href = 'Eff.html'">
+    </div>
+    </div>
+    <div class="banner2">
+      Maximizing Your Space By The GIGABYTE
+    </div>
+    <!--<img src="MainBackground.png"onclick="window.location.href = 'infoPage.html'">-->
+<center>
+<br>
+<div id="up">
+<form action="/action_page.php">
+  Username: <br><input type="text" name="uername" size="35"><br>
+  <br>
+  Password: <br> <input type="text" name="password" size="35"><br>
+</form>
+</div>
+<div id="sb">
+<button type="button" name="button">Submit</button>
+</div>
+<div id="welcome">
+  Welcome To Small Pro
+</div>
+<div id="hmbtn">
+  <button type="button" name="button" onclick="window.location.href = 'Eff.html'">Home</button>
+</div>
+</center>
+
+
+  </body>
+</html>
